@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9498EEE1F2051BF00781BF8 /* ScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9498EEC1F2051BF00781BF8 /* ScaleAnimator.swift */; };
+		E9498EEF1F2051BF00781BF8 /* ScaleAnimatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9498EED1F2051BF00781BF8 /* ScaleAnimatorCoordinator.swift */; };
+		E9498EF21F2052E900781BF8 /* ModalAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9498EF11F2052E900781BF8 /* ModalAnimationDelegate.swift */; };
+		E969AD571F1DAE0400E6F0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969AD561F1DAE0400E6F0EA /* AppDelegate.swift */; };
+		E969AD591F1DAE0400E6F0EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969AD581F1DAE0400E6F0EA /* ViewController.swift */; };
+		E969AD5C1F1DAE0400E6F0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E969AD5A1F1DAE0400E6F0EA /* Main.storyboard */; };
+		E969AD5F1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E969AD5D1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodeld */; };
+		E969AD611F1DAE0500E6F0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E969AD601F1DAE0500E6F0EA /* Assets.xcassets */; };
+		E969AD641F1DAE0500E6F0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E969AD621F1DAE0500E6F0EA /* LaunchScreen.storyboard */; };
+		E969AD6F1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969AD6E1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.swift */; };
+		E969AD7A1F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969AD791F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.swift */; };
+		E969AD881F1DAEF400E6F0EA /* ZoomImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969AD871F1DAEF300E6F0EA /* ZoomImageScrollView.swift */; };
+		E969AD8A1F1DB87600E6F0EA /* 1222.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E969AD891F1DB87600E6F0EA /* 1222.jpeg */; };
+		E9FFD3261F1F081B00485ED8 /* ShowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FFD3141F1F081B00485ED8 /* ShowItem.swift */; };
+		E9FFD3281F1F081B00485ED8 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD3181F1F081B00485ED8 /* 1.png */; };
+		E9FFD3291F1F081B00485ED8 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD3191F1F081B00485ED8 /* 10.png */; };
+		E9FFD32A1F1F081B00485ED8 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD31A1F1F081B00485ED8 /* 2.png */; };
+		E9FFD32B1F1F081B00485ED8 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD31B1F1F081B00485ED8 /* 3.png */; };
+		E9FFD32C1F1F081B00485ED8 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD31C1F1F081B00485ED8 /* 4.png */; };
+		E9FFD32D1F1F081B00485ED8 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD31D1F1F081B00485ED8 /* 5.png */; };
+		E9FFD32E1F1F081B00485ED8 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD31E1F1F081B00485ED8 /* 6.png */; };
+		E9FFD32F1F1F081B00485ED8 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD31F1F1F081B00485ED8 /* 7.png */; };
+		E9FFD3301F1F081B00485ED8 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD3201F1F081B00485ED8 /* 8.png */; };
+		E9FFD3311F1F081B00485ED8 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FFD3211F1F081B00485ED8 /* 9.png */; };
+		E9FFD3321F1F081B00485ED8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FFD3231F1F081B00485ED8 /* CollectionViewController.swift */; };
+		E9FFD3331F1F081B00485ED8 /* PhotoBrowseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FFD3241F1F081B00485ED8 /* PhotoBrowseCollectionViewController.swift */; };
+		E9FFD3351F1F083E00485ED8 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FFD3341F1F083E00485ED8 /* ImageCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E969AD6B1F1DAE0500E6F0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E969AD4B1F1DAE0200E6F0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E969AD521F1DAE0300E6F0EA;
+			remoteInfo = ScrollViewZoomImage;
+		};
+		E969AD761F1DAE0500E6F0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E969AD4B1F1DAE0200E6F0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E969AD521F1DAE0300E6F0EA;
+			remoteInfo = ScrollViewZoomImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9498EEC1F2051BF00781BF8 /* ScaleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimator.swift; sourceTree = "<group>"; };
+		E9498EED1F2051BF00781BF8 /* ScaleAnimatorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimatorCoordinator.swift; sourceTree = "<group>"; };
+		E9498EF11F2052E900781BF8 /* ModalAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalAnimationDelegate.swift; sourceTree = "<group>"; };
+		E969AD531F1DAE0300E6F0EA /* ScrollViewZoomImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewZoomImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969AD561F1DAE0400E6F0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E969AD581F1DAE0400E6F0EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E969AD5B1F1DAE0400E6F0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E969AD5E1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScrollViewZoomImage.xcdatamodel; sourceTree = "<group>"; };
+		E969AD601F1DAE0500E6F0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E969AD631F1DAE0500E6F0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E969AD651F1DAE0500E6F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E969AD6A1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewZoomImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969AD6E1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewZoomImageTests.swift; sourceTree = "<group>"; };
+		E969AD701F1DAE0500E6F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E969AD751F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewZoomImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969AD791F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewZoomImageUITests.swift; sourceTree = "<group>"; };
+		E969AD7B1F1DAE0500E6F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E969AD871F1DAEF300E6F0EA /* ZoomImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomImageScrollView.swift; path = ../../ZoomImageScrollView.swift; sourceTree = "<group>"; };
+		E969AD891F1DB87600E6F0EA /* 1222.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1222.jpeg; sourceTree = "<group>"; };
+		E9FFD3141F1F081B00485ED8 /* ShowItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowItem.swift; sourceTree = "<group>"; };
+		E9FFD3181F1F081B00485ED8 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E9FFD3191F1F081B00485ED8 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		E9FFD31A1F1F081B00485ED8 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		E9FFD31B1F1F081B00485ED8 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E9FFD31C1F1F081B00485ED8 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		E9FFD31D1F1F081B00485ED8 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		E9FFD31E1F1F081B00485ED8 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		E9FFD31F1F1F081B00485ED8 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		E9FFD3201F1F081B00485ED8 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		E9FFD3211F1F081B00485ED8 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		E9FFD3231F1F081B00485ED8 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E9FFD3241F1F081B00485ED8 /* PhotoBrowseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowseCollectionViewController.swift; sourceTree = "<group>"; };
+		E9FFD3341F1F083E00485ED8 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E969AD501F1DAE0300E6F0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969AD671F1DAE0500E6F0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969AD721F1DAE0500E6F0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9498EE91F204CC000781BF8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E9498EEC1F2051BF00781BF8 /* ScaleAnimator.swift */,
+				E9498EED1F2051BF00781BF8 /* ScaleAnimatorCoordinator.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E9498EF01F2052E900781BF8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E9498EF11F2052E900781BF8 /* ModalAnimationDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E969AD4A1F1DAE0200E6F0EA = {
+			isa = PBXGroup;
+			children = (
+				E969AD551F1DAE0400E6F0EA /* ScrollViewZoomImage */,
+				E969AD6D1F1DAE0500E6F0EA /* ScrollViewZoomImageTests */,
+				E969AD781F1DAE0500E6F0EA /* ScrollViewZoomImageUITests */,
+				E969AD541F1DAE0300E6F0EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E969AD541F1DAE0300E6F0EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E969AD531F1DAE0300E6F0EA /* ScrollViewZoomImage.app */,
+				E969AD6A1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.xctest */,
+				E969AD751F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E969AD551F1DAE0400E6F0EA /* ScrollViewZoomImage */ = {
+			isa = PBXGroup;
+			children = (
+				E9FFD3121F1F081B00485ED8 /* 图片浏览过度转场 */,
+				E969AD561F1DAE0400E6F0EA /* AppDelegate.swift */,
+				E969AD581F1DAE0400E6F0EA /* ViewController.swift */,
+				E969AD5A1F1DAE0400E6F0EA /* Main.storyboard */,
+				E969AD601F1DAE0500E6F0EA /* Assets.xcassets */,
+				E969AD891F1DB87600E6F0EA /* 1222.jpeg */,
+				E969AD621F1DAE0500E6F0EA /* LaunchScreen.storyboard */,
+				E969AD651F1DAE0500E6F0EA /* Info.plist */,
+				E969AD5D1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodeld */,
+			);
+			path = ScrollViewZoomImage;
+			sourceTree = "<group>";
+		};
+		E969AD6D1F1DAE0500E6F0EA /* ScrollViewZoomImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				E969AD6E1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.swift */,
+				E969AD701F1DAE0500E6F0EA /* Info.plist */,
+			);
+			path = ScrollViewZoomImageTests;
+			sourceTree = "<group>";
+		};
+		E969AD781F1DAE0500E6F0EA /* ScrollViewZoomImageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E969AD791F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.swift */,
+				E969AD7B1F1DAE0500E6F0EA /* Info.plist */,
+			);
+			path = ScrollViewZoomImageUITests;
+			sourceTree = "<group>";
+		};
+		E9FFD3121F1F081B00485ED8 /* 图片浏览过度转场 */ = {
+			isa = PBXGroup;
+			children = (
+				E9498EF01F2052E900781BF8 /* Protocol */,
+				E9498EE91F204CC000781BF8 /* Tools */,
+				E9FFD3131F1F081B00485ED8 /* Model */,
+				E9FFD3171F1F081B00485ED8 /* Source */,
+				E9FFD3221F1F081B00485ED8 /* VC */,
+				E9FFD3251F1F081B00485ED8 /* View */,
+			);
+			path = "图片浏览过度转场";
+			sourceTree = "<group>";
+		};
+		E9FFD3131F1F081B00485ED8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9FFD3141F1F081B00485ED8 /* ShowItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9FFD3171F1F081B00485ED8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E9FFD3181F1F081B00485ED8 /* 1.png */,
+				E9FFD3191F1F081B00485ED8 /* 10.png */,
+				E9FFD31A1F1F081B00485ED8 /* 2.png */,
+				E9FFD31B1F1F081B00485ED8 /* 3.png */,
+				E9FFD31C1F1F081B00485ED8 /* 4.png */,
+				E9FFD31D1F1F081B00485ED8 /* 5.png */,
+				E9FFD31E1F1F081B00485ED8 /* 6.png */,
+				E9FFD31F1F1F081B00485ED8 /* 7.png */,
+				E9FFD3201F1F081B00485ED8 /* 8.png */,
+				E9FFD3211F1F081B00485ED8 /* 9.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E9FFD3221F1F081B00485ED8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E9FFD3231F1F081B00485ED8 /* CollectionViewController.swift */,
+				E9FFD3241F1F081B00485ED8 /* PhotoBrowseCollectionViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E9FFD3251F1F081B00485ED8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E969AD871F1DAEF300E6F0EA /* ZoomImageScrollView.swift */,
+				E9FFD3341F1F083E00485ED8 /* ImageCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E969AD521F1DAE0300E6F0EA /* ScrollViewZoomImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E969AD7E1F1DAE0500E6F0EA /* Build configuration list for PBXNativeTarget "ScrollViewZoomImage" */;
+			buildPhases = (
+				E969AD4F1F1DAE0300E6F0EA /* Sources */,
+				E969AD501F1DAE0300E6F0EA /* Frameworks */,
+				E969AD511F1DAE0300E6F0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollViewZoomImage;
+			productName = ScrollViewZoomImage;
+			productReference = E969AD531F1DAE0300E6F0EA /* ScrollViewZoomImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E969AD691F1DAE0500E6F0EA /* ScrollViewZoomImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E969AD811F1DAE0500E6F0EA /* Build configuration list for PBXNativeTarget "ScrollViewZoomImageTests" */;
+			buildPhases = (
+				E969AD661F1DAE0500E6F0EA /* Sources */,
+				E969AD671F1DAE0500E6F0EA /* Frameworks */,
+				E969AD681F1DAE0500E6F0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E969AD6C1F1DAE0500E6F0EA /* PBXTargetDependency */,
+			);
+			name = ScrollViewZoomImageTests;
+			productName = ScrollViewZoomImageTests;
+			productReference = E969AD6A1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E969AD741F1DAE0500E6F0EA /* ScrollViewZoomImageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E969AD841F1DAE0500E6F0EA /* Build configuration list for PBXNativeTarget "ScrollViewZoomImageUITests" */;
+			buildPhases = (
+				E969AD711F1DAE0500E6F0EA /* Sources */,
+				E969AD721F1DAE0500E6F0EA /* Frameworks */,
+				E969AD731F1DAE0500E6F0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E969AD771F1DAE0500E6F0EA /* PBXTargetDependency */,
+			);
+			name = ScrollViewZoomImageUITests;
+			productName = ScrollViewZoomImageUITests;
+			productReference = E969AD751F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E969AD4B1F1DAE0200E6F0EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Ans;
+				TargetAttributes = {
+					E969AD521F1DAE0300E6F0EA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 96499PGUGU;
+						ProvisioningStyle = Automatic;
+					};
+					E969AD691F1DAE0500E6F0EA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 96499PGUGU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E969AD521F1DAE0300E6F0EA;
+					};
+					E969AD741F1DAE0500E6F0EA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 96499PGUGU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E969AD521F1DAE0300E6F0EA;
+					};
+				};
+			};
+			buildConfigurationList = E969AD4E1F1DAE0200E6F0EA /* Build configuration list for PBXProject "ScrollViewZoomImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E969AD4A1F1DAE0200E6F0EA;
+			productRefGroup = E969AD541F1DAE0300E6F0EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E969AD521F1DAE0300E6F0EA /* ScrollViewZoomImage */,
+				E969AD691F1DAE0500E6F0EA /* ScrollViewZoomImageTests */,
+				E969AD741F1DAE0500E6F0EA /* ScrollViewZoomImageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E969AD511F1DAE0300E6F0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FFD32E1F1F081B00485ED8 /* 6.png in Resources */,
+				E9FFD32C1F1F081B00485ED8 /* 4.png in Resources */,
+				E9FFD32D1F1F081B00485ED8 /* 5.png in Resources */,
+				E9FFD32F1F1F081B00485ED8 /* 7.png in Resources */,
+				E969AD8A1F1DB87600E6F0EA /* 1222.jpeg in Resources */,
+				E969AD641F1DAE0500E6F0EA /* LaunchScreen.storyboard in Resources */,
+				E9FFD32A1F1F081B00485ED8 /* 2.png in Resources */,
+				E9FFD32B1F1F081B00485ED8 /* 3.png in Resources */,
+				E9FFD3291F1F081B00485ED8 /* 10.png in Resources */,
+				E9FFD3311F1F081B00485ED8 /* 9.png in Resources */,
+				E9FFD3301F1F081B00485ED8 /* 8.png in Resources */,
+				E969AD611F1DAE0500E6F0EA /* Assets.xcassets in Resources */,
+				E969AD5C1F1DAE0400E6F0EA /* Main.storyboard in Resources */,
+				E9FFD3281F1F081B00485ED8 /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969AD681F1DAE0500E6F0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969AD731F1DAE0500E6F0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E969AD4F1F1DAE0300E6F0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969AD5F1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodeld in Sources */,
+				E969AD591F1DAE0400E6F0EA /* ViewController.swift in Sources */,
+				E9FFD3331F1F081B00485ED8 /* PhotoBrowseCollectionViewController.swift in Sources */,
+				E969AD881F1DAEF400E6F0EA /* ZoomImageScrollView.swift in Sources */,
+				E9FFD3321F1F081B00485ED8 /* CollectionViewController.swift in Sources */,
+				E9498EEF1F2051BF00781BF8 /* ScaleAnimatorCoordinator.swift in Sources */,
+				E9FFD3351F1F083E00485ED8 /* ImageCollectionViewCell.swift in Sources */,
+				E9FFD3261F1F081B00485ED8 /* ShowItem.swift in Sources */,
+				E969AD571F1DAE0400E6F0EA /* AppDelegate.swift in Sources */,
+				E9498EEE1F2051BF00781BF8 /* ScaleAnimator.swift in Sources */,
+				E9498EF21F2052E900781BF8 /* ModalAnimationDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969AD661F1DAE0500E6F0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969AD6F1F1DAE0500E6F0EA /* ScrollViewZoomImageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E969AD711F1DAE0500E6F0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E969AD7A1F1DAE0500E6F0EA /* ScrollViewZoomImageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E969AD6C1F1DAE0500E6F0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E969AD521F1DAE0300E6F0EA /* ScrollViewZoomImage */;
+			targetProxy = E969AD6B1F1DAE0500E6F0EA /* PBXContainerItemProxy */;
+		};
+		E969AD771F1DAE0500E6F0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E969AD521F1DAE0300E6F0EA /* ScrollViewZoomImage */;
+			targetProxy = E969AD761F1DAE0500E6F0EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E969AD5A1F1DAE0400E6F0EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E969AD5B1F1DAE0400E6F0EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E969AD621F1DAE0500E6F0EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E969AD631F1DAE0500E6F0EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E969AD7C1F1DAE0500E6F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E969AD7D1F1DAE0500E6F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E969AD7F1F1DAE0500E6F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96499PGUGU;
+				INFOPLIST_FILE = ScrollViewZoomImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dxd.ScrollViewZoomImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E969AD801F1DAE0500E6F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96499PGUGU;
+				INFOPLIST_FILE = ScrollViewZoomImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dxd.ScrollViewZoomImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E969AD821F1DAE0500E6F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 96499PGUGU;
+				INFOPLIST_FILE = ScrollViewZoomImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dxd.ScrollViewZoomImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollViewZoomImage.app/ScrollViewZoomImage";
+			};
+			name = Debug;
+		};
+		E969AD831F1DAE0500E6F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 96499PGUGU;
+				INFOPLIST_FILE = ScrollViewZoomImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dxd.ScrollViewZoomImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrollViewZoomImage.app/ScrollViewZoomImage";
+			};
+			name = Release;
+		};
+		E969AD851F1DAE0500E6F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 96499PGUGU;
+				INFOPLIST_FILE = ScrollViewZoomImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dxd.ScrollViewZoomImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ScrollViewZoomImage;
+			};
+			name = Debug;
+		};
+		E969AD861F1DAE0500E6F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 96499PGUGU;
+				INFOPLIST_FILE = ScrollViewZoomImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dxd.ScrollViewZoomImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ScrollViewZoomImage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E969AD4E1F1DAE0200E6F0EA /* Build configuration list for PBXProject "ScrollViewZoomImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969AD7C1F1DAE0500E6F0EA /* Debug */,
+				E969AD7D1F1DAE0500E6F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E969AD7E1F1DAE0500E6F0EA /* Build configuration list for PBXNativeTarget "ScrollViewZoomImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969AD7F1F1DAE0500E6F0EA /* Debug */,
+				E969AD801F1DAE0500E6F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E969AD811F1DAE0500E6F0EA /* Build configuration list for PBXNativeTarget "ScrollViewZoomImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969AD821F1DAE0500E6F0EA /* Debug */,
+				E969AD831F1DAE0500E6F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E969AD841F1DAE0500E6F0EA /* Build configuration list for PBXNativeTarget "ScrollViewZoomImageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E969AD851F1DAE0500E6F0EA /* Debug */,
+				E969AD861F1DAE0500E6F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E969AD5D1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E969AD5E1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodel */,
+			);
+			currentVersion = E969AD5E1F1DAE0500E6F0EA /* ScrollViewZoomImage.xcdatamodel */;
+			path = ScrollViewZoomImage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E969AD4B1F1DAE0200E6F0EA /* Project object */;
+}
